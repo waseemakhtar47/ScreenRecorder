@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Recorder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <h1>Screen Recorder</h1>
+            <div class="status-badge">
+                <span class="dot"></span>
+                <span id="statusText">Ready</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Controls + Timer Row -->
+            <div class="controls-row">
+                <div class="controls">
+                    <button id="startBtn" class="btn btn-primary">Start</button>
+                    <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+                    <button id="resumeBtn" class="btn btn-secondary" disabled>Resume</button>
+                    <button id="stopBtn" class="btn btn-danger" disabled>Stop</button>
+                    <button id="resetBtn" class="btn btn-reset" disabled>Reset</button>
+                </div>
+                <div class="timer" id="timer">00:00</div>
+            </div>
+
+            <!-- Preview -->
+            <div class="preview-container">
+                <video id="preview" controls></video>
+                <div class="preview-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <path d="M10 8l5 4-5 4V8z" />
+                    </svg>
+                    <p>Recording preview</p>
+                </div>
+            </div>
+
+            <!-- Download -->
+            <div class="download-row">
+                <button id="downloadBtn" class="btn btn-download" disabled>
+                    Download Recording
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span class="shortcut">⌘⇧R · Start/Stop</span>
+            <span class="shortcut">Space · Pause/Resume</span>
+            <span class="shortcut">⌘⇧X · Reset</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
