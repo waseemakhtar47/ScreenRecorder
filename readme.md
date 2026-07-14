@@ -4,7 +4,7 @@ A professional, full-screen screen recorder with system audio and microphone sup
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Screen Recording** - Capture your entire screen or specific windows
 - **System Audio** - Record audio from your screen (YouTube, games, etc.)
@@ -18,7 +18,7 @@ A professional, full-screen screen recorder with system audio and microphone sup
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **HTML5** - Semantic structure
 - **CSS3** - Custom properties, Flexbox, animations
@@ -31,7 +31,7 @@ A professional, full-screen screen recorder with system audio and microphone sup
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Option 1: Clone and Run
 
